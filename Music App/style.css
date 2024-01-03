@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(246, 70, 70);
+}
+
+nav {
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background-color: whitesmoke;
+    align-items: center;
+    
+}
+
+nav ul li {
+    padding: 12px;
+    cursor: pointer;
+}
+
+.brand img {
+    height: 50px;
+    width: auto;
+    padding: 0px 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 63vh;
+    background-color: rgb(242, 218, 218);
+    font-family: 'Lora', serif; 
+    color: rgb(1, 1, 4);
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 14px;
+    padding: 34px;
+    background-image: url(bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color: rgb(50, 58, 124);;
+}
+.bottom {
+    background-color: whitesmoke;
+    height: 100px;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+}
+.icons{
+    margin-top: 14px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: rgb(237, 234, 234);
+    
+    margin: 12px 10px;
+    border-radius: 34px;
+    justify-content: center;
+    align-items: center;
+}
+
+.songItem img{
+    width: 58px;
+     margin: 0 33px;
+    
+}
+.timestamp {
+    margin: 0 23px;
+}
+
+.songItem i{
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Lora', serif; 
+    }
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+}
+
+#masterPlay{
+    cursor: j;
+}
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+    body {
+        /* Adjust styles for small screens */
+    }
+
+    .container {
+        width: 90%; /* Adjust width for small screens */
+    }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        /* Adjust styles for medium screens */
+    }
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+    body {
+        /* Adjust styles for large screens */
+    }
+}
+
