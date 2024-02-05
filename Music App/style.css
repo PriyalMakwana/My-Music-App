@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,7 +12,6 @@ body {
 }
 
 nav {
-
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -21,7 +21,6 @@ nav ul {
     height: 65px;
     background-color: whitesmoke;
     align-items: center;
-    
 }
 
 nav ul li {
@@ -49,16 +48,18 @@ nav ul li {
     color: rgb(1, 1, 4);
     display: flex;
     margin: 23px auto;
-    width: 70%;
+    width: 90%; /* Adjusted width for mobile */
     border-radius: 14px;
-    padding: 34px;
-    background-image: url(bg.jpeg);
+    padding: 10px; /* Adjusted padding for mobile */
+    background-image: url(images/bg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-h1{
-    color: rgb(50, 58, 124);;
+
+h1 {
+    color: rgb(50, 58, 124);
 }
+
 .bottom {
     background-color: whitesmoke;
     height: 100px;
@@ -69,79 +70,71 @@ h1{
     flex-direction: column;
     bottom: 0;
 }
-.icons{
+
+.icons {
     margin-top: 14px;
 }
 
-.icons i{
+.icons i {
     cursor: pointer;
 }
-#myProgressBar{
+
+#myProgressBar {
     width: 80vw;
     cursor: pointer;
 }
 
-.songItem{
+.songItem {
     height: 50px;
     display: flex;
     background-color: rgb(237, 234, 234);
-    
-    margin: 12px 10px;
+    margin: 12px 0; /* Adjusted margin for mobile */
     border-radius: 34px;
     justify-content: center;
     align-items: center;
 }
 
-.songItem img{
+.songItem img {
     width: 58px;
-     margin: 0 33px;
-    
-}
-.timestamp {
-    margin: 0 23px;
+    margin: 0 10px; /* Adjusted margin for mobile */
 }
 
-.songItem i{
+.timestamp {
+    margin: 0 10px; /* Adjusted margin for mobile */
+}
+
+.songItem i {
     cursor: pointer;
 }
 
 .songInfo {
     position: absolute;
-    left: 10vw;
+    left: 5vw; /* Adjusted left position for mobile */
     font-family: 'Lora', serif; 
-    }
+}
 
-.songInfo img{
+.songInfo img {
     opacity: 0;
     transition: opacity 0.8s ease-in;
 }
 
-#masterPlay{
-    cursor: j;
+#masterPlay {
+    cursor: pointer;
 }
 
-/* Small screens (phones) */
-@media only screen and (max-width: 600px) {
-    body {
-        /* Adjust styles for small screens */
+/* Media Query for mobile devices */
+@media only screen and (max-width: 768px) {
+    nav ul li {
+        padding: 8px;
     }
-
+    .brand {
+        font-size: 1rem;
+    }
     .container {
-        width: 90%; /* Adjust width for small screens */
+        width: 100%;
+        padding: 10px;
+    }
+    .songInfo {
+        left: 0;
     }
 }
-
-/* Medium screens (tablets) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    body {
-        /* Adjust styles for medium screens */
-    }
-}
-
-/* Large screens (desktops) */
-@media only screen and (min-width: 1025px) {
-    body {
-        /* Adjust styles for large screens */
-    }
-}
-

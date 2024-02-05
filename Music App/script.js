@@ -6,16 +6,16 @@ let gif=document.getElementById('gif');
 let songItems=Array.from(document.getElementsByClassName('songItem'));
 
 let songs=[
-{songName:'Oonchi Oonchi Diwaro',filePath:'0.mp3',coverPath:'img1.jpg'},
-{songName:'Tuu Asshiqui he Mery',filePath:'1.mp3',coverPath:'img2.jpeg'},
-{songName:'Buhe Vich NehaKakkar',filePath:'2.mp3',coverPath:'img3.jpeg'},
-{songName:'Sawan Aa gaya Neha',filePath:'3.mp3',coverPath:'img4.jpeg'},
-{songName:'Ve Fukrey Fukrey--3',filePath:'4.mp3',coverPath:'img5.jpeg'},
-{songName:'Simroon Tera Name',filePath:'5.mp3',coverPath:'img6.jpeg'},
-{songName:'Sanu Ek  Pal Chain Na ',filePath:'6.mp3',coverPath:'img7.jpeg'},
-{songName:'Raata Jubin Nautiyal',filePath:'7.mp3',coverPath:'img8.jpeg'},
-{songName:'Not Ramaiya Vastavaiya',filePath:'8.mp3',coverPath:'img9.jpeg'},
-{songName:'Jamna Paar Tony Kakkar',filePath:'9.mp3',coverPath:'img10.png'}
+{songName:'Oonchi Oonchi Diwaro',filePath:'0.mp3',coverPath:'images/img1.jpg'},
+{songName:'Tuu Asshiqui he Mery',filePath:'1.mp3',coverPath:'images/img2.jpeg'},
+{songName:'Buhe Vich NehaKakkar',filePath:'2.mp3',coverPath:'images/img3.jpeg'},
+{songName:'Sawan Aa gaya Neha',filePath:'3.mp3',coverPath:'images/img4.jpeg'},
+{songName:'Ve Fukrey Fukrey--3',filePath:'4.mp3',coverPath:'images/img5.jpeg'},
+{songName:'Simroon Tera Name',filePath:'5.mp3',coverPath:'images/img6.jpeg'},
+{songName:'Sanu Ek  Pal Chain Na ',filePath:'6.mp3',coverPath:'images/img7.jpeg'},
+{songName:'Raata Jubin Nautiyal',filePath:'7.mp3',coverPath:'images/img8.jpeg'},
+{songName:'Not Ramaiya Vastavaiya',filePath:'8.mp3',coverPath:'images/img9.jpeg'},
+{songName:'Jamna Paar Tony Kakkar',filePath:'9.mp3',coverPath:'images/img10.png'}
 ]
 
 songItems.forEach((element,i) => {
